@@ -7,11 +7,11 @@ create table customers(
 );
 
 insert into customers values
-('C001', 'Arya', 'arya@mail.com', 'Delhi'),
-('C002', 'Dilip', 'dilip@mail.com', 'Mumbai'),
-('C003', 'Chaitra', 'chaitra@mail.com', 'Chennai'),
-('C004', 'Deepthi', 'deepthi@mail.com', 'Hyderabad'),
-('C005', 'Arjun', 'arjun@mail.com', 'Bangalore');
+('C013', 'Arya', 'arya@mail.com', 'Delhi'),
+('C010', 'Dilip', 'dilip@mail.com', 'Mumbai'),
+('C017', 'Chaitra', 'chaitra@mail.com', 'Chennai'),
+('C012', 'Deepthi', 'deepthi@mail.com', 'Hyderabad'),
+('C025', 'Arjun', 'arjun@mail.com', 'Bangalore');
 
 
 /* products table */
@@ -23,11 +23,11 @@ create table products (
 );
 
 insert into products values
-('P001', 'Laptop', 'Electronics', 75000),
-('P002', 'Notebook', 'Stationery', 300),
-('P003', 'Headphones', 'Accessories', 2000),
-('P004', 'Desk Chair', 'Furniture', 6000),
-('P005', 'Monitor', 'Electronics', 12000);
+('P009', 'Ipad', 'Electronics', 75000),
+('P010', 'Pencils', 'Stationery', 300),
+('P012', 'Bluetooth speaker', 'Accessories', 2000),
+('P013', 'Desk Chair', 'Furniture', 6000),
+('P017', 'Monitor', 'Electronics', 12000);
 
 
 /* offices table */
@@ -54,11 +54,11 @@ create table sales_reps (
 );
 
 insert into sales_reps values
-('S001', 'Rahul', 'rahul@gmail.com', 'O001'),
-('S002', 'Priya', 'priya@gmail.com', 'O002'),
-('S003', 'Amit', 'amit@gmail.com', 'O003'),
-('S004', 'Neha', 'neha@gmail.com', 'O004'),
-('S005', 'Kiran', 'kiran@gmail.com', 'O005');
+('SR08', 'Rahul', 'rahul@gmail.com', 'O001'),
+('SR09', 'Priya', 'priya@gmail.com', 'O002'),
+('SR10', 'Amit', 'amit@gmail.com', 'O003'),
+('SR12', 'Neha', 'neha@gmail.com', 'O004'),
+('SR13', 'Kiran', 'kiran@gmail.com', 'O005');
 
 
 /* orders table */
@@ -72,11 +72,11 @@ create table orders (
 );
 
 insert into orders values
-('ORD001', 'C001', 'S001', '2026-01-01'),
-('ORD002', 'C002', 'S002', '2026-01-07'),
-('ORD003', 'C003', 'S003', '2026-02-03'),
-('ORD004', 'C004', 'S004', '2026-02-12'),
-('ORD005', 'C005', 'S005', '2026-03-05');
+('ORD0001', 'C013', 'SR08', '2023-08-01'),
+('ORD00002', 'C010', 'SR09', '2023-01-07'),
+('ORD0003', 'C025', 'SR13', '2023-02-03'),
+('ORD0004', 'C012', 'SR12', '2023-06-12'),
+('ORD0005', 'C017', 'SR10', '2023-03-05');
 
 
 /* order_items table */
@@ -90,8 +90,8 @@ create table order_items (
 );
 
 insert into order_items values
-('ORD001', 'P001', 1),
-('ORD002', 'P002', 7),
-('ORD003', 'P003', 3),
-('ORD004', 'P004', 2),
-('ORD005', 'P005', 4);
+('ORD0001', 'P009', 1),
+('ORD0002', 'P010', 7),
+('ORD0003', 'P012', 3),
+('ORD0004', 'P013', 2),
+('ORD0005', 'P017', 4);
